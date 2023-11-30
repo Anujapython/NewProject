@@ -1,0 +1,21 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Title</title>
+    <link rel="stylesheet" href="{% static 'new3.css' %}">
+</head>
+<body>
+<div class="container">
+
+<div class="popup">
+    <img src="{% static 'img6.jpg' %}">
+    <h2>Thank You!</h2>
+    <p>Your details has been successfully submitted.</p>
+    <button ><a href="{% url 'storeapp:index' %}">Ok</a></button>
+</div>
+</div>
+</body>
+</html>

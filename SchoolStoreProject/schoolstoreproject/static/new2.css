@@ -1,0 +1,40 @@
+*{
+    font-family:sans-serif;
+}
+body{
+background:pink;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin-top:20%;
+}
+button{
+    position:relative;
+    width:200px;
+    padding:15px 0;
+    text-align:center;
+    margin:20px 10px;
+    font-weight:bold;
+    border:2px solid pink;
+    background:transparent;
+    color:#fff;
+    cursor:pointer;
+    overflow:hidden;
+    text-transform:uppercase;
+    border:2px solid rgba(255,255,2550.5);
+    border-radius:20px;
+    backdrop-filter:blur(20px);
+}
+span{
+    background:pink;
+    height:100%;
+    width:0;
+    position:absolute;
+    left:0;
+    bottom:0;
+    z-index:-1;
+    transition:0.5s;
+}
+button.hover span{
+    width:100%;
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Education</title>
+    <link rel="stylesheet" href="static/custom1.css">
+<script src="https://kit.fontawesome.com/b0ec5853ee.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div class="menu_bar">
+        <h1 class="logo">School Store</h1>
+    <ul>
+        <li><a href="" class="active">Home</a></li>
+        <li>
+            <a href="">Department&nbsp;<i class="fa-solid fa-caret-down"></i></a>
+        <div class="dropdown_menu">
+            <ul>
+            <li><a href="https://en.wikipedia.org/wiki/Computer_science">Computer Scienc</a></li>
+            <li><a href="https://en.wikipedia.org/wiki/Commerce">Commerce</a></li>
+            <li><a href="https://en.wikipedia.org/wiki/Humanities">Humanities</a></li>
+            <li><a href="https://en.wikipedia.org/wiki/Science">Science</a></li>
+            </ul>
+        </div>
+        </li>
+        {% if user.is_authenticated %}
+        <li>Hello {{user.username}}</li>
+        <li><a href="logout">Logout</a></li>
+        {% else %}
+        <li><a href="login">Login</a></li>
+        <li><a href="register">Register</a></li>
+        {% endif %}
+    </ul>
+</div>
+<section>
+    <img src="static/image_5.jpg" width="1500px;">
+</section>
+</body>
+</html>
